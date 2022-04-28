@@ -1,0 +1,61 @@
+#!/usr/bin/python
+from time import *
+import time
+from file import *
+
+from gpio import *
+
+#print(time.localtime())
+t= time.localtime()
+current_time = time.strftime("%D %H:%M:%S",t)
+print (current_time)
+
+#file1 = open("TestFile.txt", "w")
+#file1.write("Hello Test Bla bla \n")
+
+#file1.close()
+
+file1 = open("TestFile.txt", "r+")
+
+print(file1.read())
+
+
+
+#int_test = 3
+#print(int_test)
+
+#if 5>2 :
+#	print("true")
+#elif 2>5:
+#	print("false")
+#else:
+#	print("quarck")
+	
+
+#print(type(int_test))
+
+
+#i=0
+#while i<6:
+#	print(i)
+#	if i==3:
+#		break
+#	i+=1
+
+#fruits = ["apple","banana", "cherry"]
+#fruits.append("tree")
+#for x in fruits:
+#	print(x)
+
+	
+#fo = open("foo.txt","a")
+#fo.write("Test")
+#fo.close()
+
+#print "Name of the file: ", fo.name
+#print "Closed or not : ", fo.closed
+#print "Opening mode : ", fo.mode
+#print "Softspace flag : ", fo.softspace
+
+#fileObject.close()
+
